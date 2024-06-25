@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="386" height="216" viewBox="0 0 386 216">
+  <defs>
+    <filter id="사각형_24" x="0" y="0" width="386" height="216" filterUnits="userSpaceOnUse">
+      <feOffset dy="20" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="25" result="blur"/>
+      <feFlood flood-opacity="0.302"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="btn_white" transform="translate(75 55)">
+    <g id="그룹_90" data-name="그룹 90">
+      <g transform="matrix(1, 0, 0, 1, -75, -55)" filter="url(#사각형_24)">
+        <rect id="사각형_24-2" data-name="사각형 24" width="236" height="66" rx="33" transform="translate(75 55)" fill="#d97d54"/>
+      </g>
+      <text id="NEXT" transform="translate(118 38)" fill="#fff" font-size="22" font-family="RiftSoft-Demi, Rift Soft" font-weight="300" letter-spacing="0.1em"><tspan x="-21.153" y="0">NEXT</tspan></text>
+    </g>
+  </g>
+</svg>
