@@ -55,7 +55,7 @@ h3.black_tit{
 }
 #gnb>ul>li{float: left;}
 #gnb>ul>li>a{
-    font-size: 20px;
+    font-size: 18px;
     color: #000;
     padding: 10px 50px; 
     box-sizing: border-box;
