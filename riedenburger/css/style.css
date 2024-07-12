@@ -1,0 +1,635 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@200;300;400;500;600;700;900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Tenor+Sans&display=swap');
+
+
+body {
+    background-color: #F0EFEA;
+}
+
+
+.v_btn {
+    position: relative;
+    width: 100%;
+    padding-bottom: 300px;
+    font-size: 14px;
+    color: #7F7A67;
+    font-weight: 800;
+}
+
+
+
+/* header */
+#header {
+    width: 100%;
+    height: 940px;
+    position: relative;
+}
+
+
+.header_bg{
+    width: 77%;
+    height: 940px;
+    background-color: #EAE4D4;
+}
+#header .lnb {
+    position: fixed;
+    top: 55px;
+    right: 5%;
+    font-size: 20px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 400;
+    z-index: 50;
+}
+
+#header .lnb span {
+    margin-right: 30px;
+}
+
+#header .lnb span a{
+    color: #222;
+}
+
+#header .lnb span a:hover{
+    color: #B36446;
+}
+
+#header .logo {
+    position: fixed;
+    top:40px;
+    left:42%;
+    z-index: 49;
+}
+
+#header h1>a{
+    font-size: 40px;
+    font-family: 'Noto Serif KR', serif;
+    font-weight: 400;
+    color: #222;
+}
+
+#header .gnb {
+    position: fixed;
+    top:55px;
+    left:5%;
+    z-index: 49;
+}
+
+#header .gnb span {
+    display: block;
+    width: 30px;
+    height: 3px;
+    background-color: #222;
+}
+
+#header .gnb span:nth-child(2){
+    margin: 7px 0;
+}
+
+.header_bg{
+}
+
+.header_bg.on{
+    width: 100%;
+    height: 120px;
+    background-color: #fff;
+    opacity: 0.9;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 48;
+}
+
+#header .main_rolling {
+    position: absolute;
+    top:200px;
+    left:26%;
+    width: auto;
+    height: 740px;
+    overflow: hidden;
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .swiper-pagination-bullet{
+    width: 5px;
+    height: 30px;
+    border-radius: 0;
+    margin: 0px 10px !important ; 
+}
+
+.swiper-pagination-bullet.swiper-pagination-bullet-active{
+    background-color: rgb(76, 94, 92);
+}
+
+#header .main_rolling video{
+    position: absolute;
+    top:0px;
+    left:26%;
+    width: auto;
+    height: 740px;
+}
+
+#header .main_rolling_txt{
+    position: absolute;
+    top:400px;
+    left:10%;
+    z-index: 2;
+}
+
+#header .main_rolling_txt h2 {    
+    font-family: 'Tenor Sans', sans-serif;
+    font-size: 60px;
+    color: #222;
+}
+
+#header .main_rolling_txt p{
+    font-family: 'Noto Serif KR', serif;
+    font-size: 24px;
+    line-height: 100px;
+    color: #222;
+}
+
+.gnb_open{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top:0;
+    left:-100%;
+    background-color: #fff;
+    z-index: 49;
+    transition: all 0.5s;
+    opacity: 0;
+}
+
+.gnb_open.on{
+    left:0;
+    opacity: 1;
+}
+
+.btn_close{
+    position: absolute;
+    top:50px;
+    left:5%;
+    z-index: 20;
+    font-size: 30px;
+    color: #222;
+    cursor: pointer;
+}
+
+
+/* sec1 */
+
+.sec_1 {
+    position: relative;
+    margin-top: 200px;
+    text-align: center;
+    margin-bottom: 200px;
+}
+
+.sec_1 p{
+    color: #7F7A67;
+    font-size: 20px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 400;
+}
+
+.sec_1 h2{
+    margin-bottom: 100px;
+    font-family: 'Noto Serif KR', serif;
+    font-size: 36px;
+    line-height: 100px;
+    color: #222;
+}
+
+.main_service_item {
+    position: relative;
+    top:0; 
+    left:0;
+    display: inline-block;
+    width: 485px;
+    height: 750px;
+    margin-right: 35px;
+    margin-bottom: 100px;
+}
+
+.main_service_content {
+    position: relative;
+    text-align: left;
+    margin-top: 10px;
+}
+
+.main_service_tit {
+    font-size:24px; 
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 400;
+}
+
+.main_service_txt{
+    display: block;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 400;
+    font-size:30px;
+    color:#B36446;
+}
+
+.main_service_link {
+    display:block;
+    position:absolute;
+    top:0;
+}
+
+.main_service_thumb {
+    position:relative;
+}
+
+.main_service_thumb:before {
+    border: 0 solid #7F7A67;
+    position:absolute;
+    top:0;left:0;right:0;bottom:4px;
+    content:'';
+    display:block;
+    opacity:0;
+    z-index:10;
+    transition:opacity .3s, border .3s;
+}
+
+.main_service_link:hover .main_service_thumb:before {
+    position:absolute;
+    top:0;left:0;right:0;bottom:4px;
+    border-width:30px;
+    opacity:1;
+}
+
+
+.sec_2 {
+    position: relative;
+    width: 200%;
+    top:0;
+    left: 0;
+    z-index: 1;
+}
+
+.move_txt{
+    font-family: 'Tenor Sans', sans-serif;
+    font-size: 180px;
+    color: #222;
+    position: absolute;
+    top:-250px;
+    left: 500px; 
+    /*transition: all 5s inherit;
+    animation: mt 10s infinite;*/
+}
+
+/* .move_txt.on{
+    left:-5%;
+} */
+
+@keyframes mt{
+    0%{left: 5%;}
+    50%{ left: -10%;}
+    100%{ left: 5%;}
+}
+
+
+.sec_2 .sec_2_txt{
+    position: absolute;
+    width: 100%;
+    top: 170px;
+    left: 7.5%;
+    z-index: 2;
+}
+
+.sec_2 .sec_2_txt .tit{
+    font-family: 'Tenor Sans', sans-serif;
+    font-size: 60px;
+    color: #222;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+.sec_2 .sec_2_txt .txt{
+    font-family: 'Noto Serif KR', serif;
+    font-size: 40px;
+    color: #222;
+    position: absolute;
+    top: 100px;
+    left: 0px;
+}
+
+.sec_2>img{
+    position: relative;
+    width: 45%;
+    top:0;
+    left: 0;
+}
+
+.sec_2 .v_btn {
+    margin-top: 250px;
+}
+
+
+/* sec_3 */
+
+.sec_3 .v_btn {
+    margin-top: 100px;
+    margin-bottom: 0px;
+}
+
+.sec_3 {
+    padding-top: 200px;
+    position: relative;
+    top:-200px;
+    text-align: center;
+    background-color: #fff;
+}
+
+.sec_3 p{
+    margin-top: 100px;
+    color: #7F7A67;
+    font-size: 20px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 400;
+}
+
+.sec_3 h2{
+    margin-bottom: 100px;
+    font-family: 'Tenor Sans', sans-serif;
+    font-size: 60px;
+    line-height: 100px;
+    color: #222;
+}
+
+#user{
+    width:20vw;
+}
+#user path{
+    stroke-dasharray: 38;
+    stroke-dashoffset: 38;
+    
+    /* 한번만 애니메이션 해주는거라면 어레이와 오프셋값을 같게 맞춰주고 인피니트 애니메이션 적용일 경우 오프셋값을 크게 잡아도된다. */
+    transition: all 1s;
+}
+#user:hover path{ 
+    stroke-dashoffset: 0;
+  }
+  
+.sec_3 .tit{
+    margin-top: 50px;
+    font-family: 'Noto Serif KR', serif;
+    font-size: 36px;
+    color: #222;
+}
+.sec_3 .txt{
+    margin-top: 20px;
+    font-family: 'Noto Serif KR', serif;
+    font-size: 16px;
+    color: #222;
+}
+
+.sec_4 {
+    position: relative;
+    width: 100%;
+    height: 700px;
+    top: -200px;
+    left: 0;
+    background-color: #fff;
+}
+
+.sec_4 .sec_4_txt{
+    font-family: 'Noto Serif KR', serif;
+    font-size: 40px;
+    color: #222;
+    position: absolute;
+    width: 100%;
+    top: 130px;
+    left: 15%;
+    z-index: 3;
+}
+
+.sec_4 .sec_4_txt .txt{
+    position: absolute;
+    top: 180px;
+    left: 0;
+}
+
+.sec_4 .one{
+    position: absolute;
+    width: 90%;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+.sec_4 .v_btn {
+    margin-top:100px;
+}
+
+.sec_5 {
+    position: relative;
+    width: 100%;
+    height: 1100px;
+    top: 0;
+    left: 0;
+}
+.sec_5_bg {
+    position: absolute;
+    width: 660px;
+    height: 1300px;
+    top: -200px;
+    right: 0;
+    background-color: #EAE4D4;
+    z-index: -5;
+}
+
+.sec_5 .sec_5_txt{
+    position: absolute;
+    width: 100%;
+    top: 300px;
+    left: 15%;
+    z-index: 2;
+}
+
+.sec_5 .sec_5_txt .tit{
+    font-family: 'Tenor Sans', sans-serif;
+    font-size: 60px;
+    color: #222;
+    position: absolute;
+    top: 30px;
+    left: 0px;
+}
+
+.sec_5 .sec_5_txt .txt{
+    font-family: 'Noto Serif KR', serif;
+    font-size: 24px;
+    color: #222;
+    position: absolute;
+    top: 300px;
+    left: 0px;
+}
+
+.sec_5>img{
+    position: absolute;
+    top: 100px;
+    right: 15%;
+}
+
+.sec_5 .xceo{
+    position: absolute;
+    top: 100px;
+    right: 15%;
+}
+
+.sec_5 .v_btn {
+    margin-top:400px;
+}
+
+
+.sec_5 p{
+    color: #7F7A67;
+    font-size: 20px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 400;
+}
+
+.insta{
+    position: relative;
+    width: 100%;
+    height: 1000px;
+    top: -200;
+    left: 0;
+    background-color: #D6D2C9;
+}
+
+.insta h2{
+    position: absolute;
+    width: 100%;
+    top: 130px;
+    left: 15%;
+    z-index: 2;
+    font-family: 'Tenor Sans', sans-serif;
+    font-size: 60px;
+    color: #222;
+}
+
+.insta .insta_photo{
+    position: absolute;
+    top: 210px;  
+    left: 0;
+    margin: 10px 15%;
+}
+
+.insta ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.insta ul li{
+    margin: 0 10px;
+}
+
+
+/* popular3 */
+.insta_list>li{
+    float: left;
+    width: 25%; 
+    margin-right: 3%;
+    height:300px;
+    overflow: hidden;
+}
+
+.insta_list>li>a{
+    display: block;
+    width: 100%;
+    position: relative;
+}
+.insta_list>li>a>.info{
+    position: absolute; 
+    z-index: 3;
+    color: #fff;
+    bottom: 10px; left: 20px;
+    transition: all .5s;
+    opacity: 0;
+}
+.insta_list>li .info h4{
+    font-size: 14px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 400;
+    color: #fff;
+    margin-bottom: 4px;
+}
+.insta_list>li img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.insta_list>li>a::after{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: 0;
+    position: absolute; top: 0; left: 0;
+    transition: all .5s;
+}
+.insta_list>li:hover>a>.info{opacity: 1;}
+.insta_list>li:hover>a::after{opacity: 0.5;}
+
+
+.footer{
+    position: relative;
+    width: 100%;
+    height: 400px;
+    top: 0;
+    left: 0;
+    background-color: #7F7A67;
+}
+.footer h1>a{
+    position: absolute;
+    top: 100px;
+    left: 15%;
+    font-size: 30px;
+    font-family: 'Noto Serif KR', serif;
+    font-weight: 400;
+    color: #fff;
+}
+
+.footer p{
+    position: relative;
+    top: 150px;
+    left: 15%;
+    font-size: 14px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 400;
+    color: #fff;
+}
+
+.footer p a{
+    margin-right: 20px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 400;
+    color: #fff;
+}
+
+.footer .line {
+    width: 68%;
+    height: 1px;
+    background-color: #fff;
+}
