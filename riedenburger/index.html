@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>riedenburger</title>
+  <link rel="shortcut icon" href="img/rieden.ico" type="image/x-icon">
+  <link rel="icon" href="img/rieden.ico" type="image/x-icon">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="css/scroll1.css">
+  <link rel="stylesheet" href="css/aos.css">
+  <script src="js/aos.js"></script>
+  <script src="js/swiper-bundle.min.js"></script>
+  <script src="js/scroll1.js"></script>
+  <script src="js/jquery-2.1.1.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/jquery-ui.js"></script>
+</head>
+
+<body>
+  <div class="wrap">
+
+    <header class="header">
+      <h1 class="logo">
+        <img src="img/h_logo.png" alt="">
+      </h1>
+      <nav>
+        <ul>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Our Beer</a></li>
+          <li><a href="#">Stores</a></li>
+          <li><a href="#">Costomer</a></li>
+        </ul>
+      </nav>
+      <div class="rnb">
+        <a href="#"><span class="btn_h1">Smart Order</span></a>
+        <a href="#"><span class="btn_h2">Partner Store</span></a>
+      </div>
+
+      <div class="m_btn">
+        <svg viewBox="0 0 52 40" fill="#000000" xmlns="http://www.w3.org/2000/svg" width="52" height="40"
+          class="css-v05ib2">
+          <g transform="translate(11197 12249)">
+            <rect width="52" height="4" transform="translate(-11197 -12231)"></rect>
+            <rect width="52" height="4" transform="translate(-11197 -12249)"></rect>
+            <rect width="52" height="4" transform="translate(-11197 -12213)"></rect>
+          </g>
+        </svg>
+      </div>
+    </header>
+
+    <div class="gnb_open">
+      <div class="btn_close">X</div>
+      <ul class="open_gnb">
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Our Beer</a></li>
+          <li><a href="#">Stores</a></li>
+          <li><a href="#">Costomer</a></li>
+        </ul>
+        <ul class="open_gnb_btn">
+          <li><a href="#">
+            <span class="btn_h1">Smart Order</span></a></li>
+          <li><a href="#">
+            <span class="btn_h2">Partner Store</span></a></li>
+        </ul>
+  </div>
+
+  <script>
+  $(function(){
+      $('.m_btn').click(function(){
+          $('.gnb_open').addClass('on');
+      });
+      $('.btn_close').click(function(){
+          $('.gnb_open').removeClass('on');
+      });
+  });
+  </script>
+
+    <section class="visual">
+      <div class="rectangle">
+        <img src="img/Rectangle_1920.png" alt="">
+      </div>
+
+      <!-- Swiper -->
+      <div class="swiper mainSwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="visual_box pic1">
+              <div class="visual_txt" data-aos="fade-up" data-aos-duration="1000">
+                <h2>RIEDENBURGER<br>DOLDEN BOX</h2>
+                <p>최고등급 유기농 홉인 DOLDEN과 최적화된 밸런스가 느껴지는<br>귀하고 고급스러운 맥주로 다양한 개성을 맛보실 수 있습니다.</p>
+                <a href="#">
+                  <div class="btn">자세히 보기</div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="visual_box pic2">
+              <div class="visual_txt" data-aos="fade-up" data-aos-duration="1000">
+                <h2>EINKORN EDELBIER</h2>
+                <p>아주 귀한 고대곡물 아인콘 Einkorn을 베이스로 양조한<br>
+                  세계에서 몇 안되는 우아하고 고급스러운 맥주로<br>
+                  바닐라 맛이나는 미식가를 위한 고품격 맥주입니다.</p>
+                <a href="#">
+                  <div class="btn">자세히 보기</div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="visual_box pic3">
+              <div class="visual_txt visual_txt3" data-aos="fade-up" data-aos-duration="1000">
+                <h2>ANCIENT<br>GRAIN BOX</h2>
+                <p>최고등급 유기농 홉인 DOLDEN과 최적화된 밸런스가 느껴지는<br>귀하고 고급스러운 맥주로 다양한 개성을 맛보실 수 있습니다.</p>
+                <a href="#">
+                  <div class="btn">자세히 보기</div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination btn_up"></div>
+      </div>
+    </section>
+
+    <script>
+      var swiper = new Swiper(".mainSwiper", {
+        slidesPerView: 1,
+        spaceBetween: 0,
+        loop: true,
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+
+    <section class="new_products clearFix">
+      <h2 data-aos="fade-up" data-aos-duration="500">NEW PRODUCTS</h2>
+      <div class="product_n product_n1" data-aos="fade-up" data-aos-duration="1000">
+        <img src="img/pro_1.png" onmouseover="this.src='img/pro_1_c.png'" onmouseout="this.src='img/pro_1.png'" />
+        <h3>ALKOHOLFREI</h3>
+        <p>향나무의 고급스러운 향이 은은하게 느껴지는 조화롭고 순한 무알콜 고대 곡물 맥주</p>
+        <a href="#">
+          <div class="btn">제품보기</div>
+        </a>
+      </div>
+      <div class="product_n product_n2" data-aos="fade-up" data-aos-duration="1000">
+        <img src="img/pro_2.png" onmouseover="this.src='img/pro_2_c.png'" onmouseout="this.src='img/pro_2.png'" />
+        <h3>DINKELMALZ</h3>
+        <p>카라멜 향이 나고 아가베 시럽의 유쾌한 달콤함이 느껴지는 가벼운 거품의 짙은 호박색 여름 곡물 맥주</p>
+        <a href="#">
+          <div class="btn">제품보기</div>
+        </a>
+      </div>
+      <div class="product_n product_n3" data-aos="fade-up" data-aos-duration="1000">
+        <img src="img/pro_3.png" onmouseover="this.src='img/pro_3_c.png'" onmouseout="this.src='img/pro_3.png'" />
+        <h3>HIRSE-BLER</h3>
+        <p>단맛과 신맛 그리고 유기농 홉의 섬세한 쓴맛이 나고 미세한 거품이 느껴지는 글루텐 프리 기장 맥주</p>
+        <a href="#">
+          <div class="btn">제품보기</div>
+        </a>
+      </div>
+    </section>
+
+    <section class="best_products">
+      <div class="bg_1"></div>
+
+      <div class="swiper bnSwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="product_b">
+              <div class="tit_1">
+                <img src="img/slide_tit_1.png" alt="">
+              </div>
+              <div class="tit_2" data-aos="zoom-in-right" data-aos-duration="500">
+                <img src="img/emmer_1.png" alt="">
+              </div>
+              <div class="product_b_img">
+                <img src="img/slide_photo_1.png" alt="">
+              </div>
+              <div class="txt" data-aos="zoom-in-left" data-aos-duration="500">
+                <h3>EMMER BIER</h3>
+                <p>1001 BEERS에서 “죽기전에 꼭 마셔봐야 할 맥주”로 선정한<br>EMMER BIER는 기원전 인류 최대의 고대곡물 에머(EMMER)를<br>수도사들이 직접 재배하고 양조한
+                  유니크한 맛이 나는<br>리덴버거 양조장만의 귀한 시그니처 맥주입니다.</p>
+                <a href="#">
+                  <div class="btn">제품보기</div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="product_b">
+              <div class="tit_1">
+                <img src="img/slide_tit_2.png" alt="">
+              </div>
+              <div class="tit_2">
+                <img src="img/emmer_2.png" alt="">
+              </div>
+              <div class="product_b_img">
+                <img src="img/slide_photo_2.png" alt="">
+              </div>
+              <div class="txt">
+                <h3>FEIN HOPFIG</h3>
+                <p>2023 세계 유기농 식품 무역 박람회 BIOFACH에서 선보인<br>
+                  ALKOHOLFREI FEIN HOPFIG는 리덴버거 신제품으로<br>
+                  고급스러운 홉의 향과 새콤한 맛이 느껴지는 무알콜 맥주입니다. <br>
+                  천연원료를 사용하여 훌륭한 맛에 낮은 칼로리를 보장합니다.</p>
+                <a href="#">
+                  <div class="btn">제품보기</div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="product_b">
+              <div class="tit_1">
+                <img src="img/slide_tit_3.png" alt="">
+              </div>
+              <div class="tit_2">
+                <img src="img/emmer_3.png" alt="">
+              </div>
+              <div class="product_b_img">
+                <img src="img/slide_photo_3.png" alt="">
+              </div>
+              <div class="txt">
+                <h3>DOLDEN DARK</h3>
+                <p>2021 마이닝거 국제 수제 맥주 어워드에서 금상을 수상하고<br>
+                  2021 올해의 포터에 선정된 DOLDEN DARK는<br>
+                  최고등급 유기농 홉 DOLDEN과 깨끗한 유기농 보리를 로스팅해<br>
+                  굉장히 부드럽고 카라멜과 같은 첨가물이 없어 질리지 않습니다.</p>
+                <a href="#">
+                  <div class="btn">제품보기</div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-pagination"></div>
+      </div>
+
+      <div class="bg_2"></div>
+    </section>
+
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".bnSwiper", {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        loop: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+
+    <!-- best_products -->
+    <section class="sns">
+      <div class="rectangle"><img src="img/Rectangle_1920_2.png" alt=""></div>
+      <div class="sns_txt">
+        <h3>Have a good time<br>with Riedenburger!</h3>
+        <p>@riedenburger.kr</p>
+        <a href="#" class="sns_btn"><img src="img/insta_btn.png" alt=""></a>
+      </div>
+      <div class="sns_photo" data-aos="fade-up" data-aos-duration="2000">
+        <div class="sns_img sns_img1"></div>
+        <div class="sns_img sns_img2"></div>
+        <div class="sns_img sns_img3"></div>
+        <div class="sns_img sns_img4"></div>
+      </div>
+    </section>
+    <!-- sns -->
+    <section class="video">
+      <div class="rectangle"><img src="img/Rectangle_1920_3.png" alt=""></div>
+
+      <div class="bg_3"></div>
+
+      <h3>BRAND STORY</h3>
+      <div class="video_img">
+        <img src="img/image_video 1.png" alt="">
+        <div class="video_txt">
+          <img src="img/v_logo 1.png" alt="">
+          <p>플랑크스테텐 수도원과 유기적인 지역 파트너십</p>
+          <a href="" class="btn"><img src="img/youtube_btn.png" alt=""></a>
+        </div>
+      </div>
+
+      <div class="bg_4"></div>
+      <div class="bg_5"></div>
+
+    </section>
+    <!-- video -->
+    <footer>
+      <h6><img src="img/f_logo 1.png" alt="RIEDENBURGER"></h6>
+      <p><span>제조 Riedenburger Brauhaus</span><span>판매 ㈜지에이치 인터내셔널</span>사업자등록번호 735-87-00655<br><span>대전광역시 중구 대종로
+          529번길 54 1층</span>고객상담 · 제품문의 042-223-2333<br><br>COPYRIGHT © 2023 GH INTERNATIONAL. ALL RIGHTS RESERVED.</p>
+    </footer>
+  </div>
+
+  <script>
+    AOS.init();
+  </script>
+
+</body>
+
+</html>
