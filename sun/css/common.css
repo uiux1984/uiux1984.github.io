@@ -1,0 +1,21 @@
+.wrap{width: 100%;}
+.contain{
+    width: 90%; 
+    margin: 0 auto;
+    max-width: 1132px;
+}
+
+.clearFix::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.sec_tit{
+    font-size: 20px;
+    color:lightcoral ;
+}
+
+.mr0{
+    margin-right: 0 !important;
+}

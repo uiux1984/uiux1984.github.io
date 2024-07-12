@@ -1,0 +1,349 @@
+/* header */
+
+#header{
+    padding: 20px 0px;
+    position: relative;
+}
+.logo{float: left; margin-left: 2%;}
+.logo>a{display: inline-block; font-size: 26px; color: lightcoral; padding: 8px 6px;}
+.logo img{
+    position: absolute;
+    top:12px;
+    left: 2%;
+    width: 90px;
+    z-index: 10;
+    border-radius:50%;
+    box-shadow: 0px 8px 8px 1px rgba(0, 0, 0, 0.25);
+}
+
+#gnb{
+    position: absolute;
+    right: 2%; top: 22px;
+    display: none;
+}
+#gnb>ul{width: 100%;}
+#gnb>ul>li{float: left; margin-right: 4px;}
+#gnb>ul>li>a{
+    color: #222;
+    display: inline-block; 
+    padding: 10px 5px 20px 5px; 
+    font-weight: bold;
+}
+#gnb>ul>li:hover>a{
+    color: lightcoral;}
+
+span.mbtn_toggle{
+    display: block;
+    float: right;
+    width: 20px;
+    cursor: pointer;
+    margin-right: 2%;
+    margin-top: 12px;
+    
+}
+.mbtn_toggle>span{
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #222;
+}
+.mbtn_toggle>span:nth-child(1){}
+.mbtn_toggle>span:nth-child(2){margin: 4px 0;}
+.mbtn_toggle>span:nth-child(3){}
+
+/* 미션 -토글버튼 g_con 애니메이션 만들기 */
+
+
+
+
+/* figure */
+
+#figure{
+    width: 100%; height: 300px;
+    background: url(../images/p-images/slide2.jpg) no-repeat center/cover;
+}
+
+/*  weAre_section*/
+.weAre_section{margin-top: 60px; text-align: center;}
+.top_w{}
+.top_w>h2{margin-bottom: 30px;}
+.top_w>p{line-height: 1.4;}
+
+.icon_w{margin-top: 60px;}
+.icon_list{}
+.icon_list>li{margin-bottom: 40px; text-align: center;
+float: left; margin-right: 2%; width: 48%;}
+.icon_list>li>a{
+    display: block;
+}
+.icon_list>li>a>img{
+    height: 90px; width: auto;
+}
+.icon_list>li>a>h3{
+    margin: 24px 0 8px; color: #222;
+}
+.icon_list>li>a>p{
+    line-height: 2; color: #555;
+}
+
+/* work */
+.work_section{}
+.work_section>h2{text-align: center;margin-bottom: 30px;}
+.work_list{}
+.work_list>li{width: 100%; overflow: hidden;}
+.work_list>li>a{display: block; width: 100%; position: relative; }
+.work_list>li>a>.info{
+    position: absolute; 
+    z-index: 3;
+    color: #000;
+    top: -100px; left: 20px;
+    transition: all .5s;
+
+}
+.work_list>li .info h3{font-size: 18px; margin-bottom: 8px;}
+.work_list>li .info span{}
+.work_list>li img{
+    display: block;
+    width: 100%; height: auto;
+}
+
+.work_list>li>a::after{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: lightcoral;
+    opacity: 0;
+    position: absolute; top: 0; left: 0;
+
+    transition: all .5s;
+
+}
+
+
+/* work 호버 애니메이션  */
+
+.work_list>li:hover>a>.info{
+    top: 10px;
+}
+
+.work_list>li:hover>a::after{
+    opacity: 0.8;
+}
+
+
+/* blog */
+.blog_section{margin-top: 60px;}
+
+.blog_section h2{text-align: center; margin-bottom: 30px;}
+
+.blog_list{}
+.blog_list>li{
+    width: 100%;
+    margin-bottom: 40px;
+}
+.blog_list>li>a{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.blog_list>li>a>img{
+    display: block;
+    width: 100%; height: auto;
+}
+
+.blog_list>li>span{
+    display: block;
+    margin: 16px 0;
+    color: #555;
+}
+.blog_list>li>h3{
+    font-size: 20px;
+   
+}
+.blog_list>li>h3>a{ color: #222;}
+
+
+/* contact */
+
+.contact_section{margin-top: 60px;}
+.contact_section h2{
+    text-align: center; margin-bottom: 30px;
+}
+
+.form_box{}
+.form_box form{}
+.form_box .btn_wrap{}
+
+/* form */
+.inputWrap{}
+.textArea{}
+
+/* inputWrap */
+.inputWrap input, .textArea  textarea{
+    width: 100%;
+    border: 0;
+    border-bottom: 1px solid #757575;
+    color: lightcoral;
+    font-size: 12px;
+    vertical-align: top;
+}
+.inputWrap input{
+  
+    padding: 12px 0;
+
+}
+
+/* textArea */
+.textArea textarea{
+    height: 165px; width: 100%; margin-top: 20px; 
+}
+
+
+input::placeholder {
+    color:lightcoral;
+    }    
+    
+textarea::placeholder{
+        color:lightcoral;
+    }
+
+
+
+/*  */
+.btn_wrap{margin: 40px 0; text-align: center;}
+.btn_wrap>button{
+ padding: 15px 12px;
+ color: #fff;
+ background-color:lightcoral;
+ border: none;
+ cursor: pointer;
+}
+
+.btn_wrap>button:hover{
+    background-color:lightcoral;
+}
+
+
+/* 미션  지도 width 100% height 값은 모바일과 pc가 다르게 출력해보기*/
+
+.map_section{margin-top: 60px;}
+.map_section iframe{width: 100%; height: 240px;}
+
+#footer{
+    padding: 30px 0; width: 100%;
+    text-align: center;
+    font-size: 14px; background-color: #222;
+    color: #fff; 
+}
+
+
+
+
+
+@media screen and (min-width:768px) {
+    
+
+    /* header */
+
+    #header{
+        padding: 30px 0px;
+    }
+    .logo img{
+        top:22px;
+        width: 120px;
+}
+    
+    span.mbtn_toggle{
+        display: none;  
+    }
+
+    #gnb{
+        display: block;
+    }
+
+    /* figure */
+
+    #figure{
+         height: 600px; 
+    }  
+    
+    /* blog */
+
+    .blog_list>li{
+        width: 32%; float: left;
+        margin-bottom: 40px;
+        margin-right: 2%;
+
+    }
+
+
+/* form */
+.inputWrap{margin-right: 2%; width: 49%; float: left;}
+.textArea{width: 49%; float: left;}
+
+/* textArea */
+.textArea textarea{
+    height: 92px; 
+}
+
+
+
+} /* min-width:768px */
+
+@media screen and (min-width:1132px) {
+
+.weAre_section{ text-align: left;}
+.top_w{}
+.top_w>h2{ float: left; width: 25%;}
+.top_w>p{ float: left; width: 75%; position: relative; padding-left: 20px; box-sizing: border-box;}
+
+/* bar 디자인 출력 */
+.top_w>p::before{
+    content: '';
+    display: block;
+    width: 2px;
+    height: 55px;
+    background-color: #ccc;
+    position: absolute; 
+    left: 0; top: 8px;
+}
+/* 아이콘 */
+
+.icon_w{margin-top: 60px;}
+.icon_list{width: 100%;}
+.icon_list>li{float: left; margin-right: 2%; width: 23.5%;}
+
+.divider{
+    width: 90%; height: 2px; background-color: #ccc;
+    margin: 100px auto;
+
+}
+
+/* work */
+
+.work_section>h2{text-align: left;}
+.work_list>li{width: 25%; float: left;}
+
+
+/* form */
+.contact_section h2{
+    text-align: left; float: left; width: 30%; margin: 30px 0;
+}
+
+.form_box{float: left; width: 70%;}
+
+.map_section iframe{ height: 440px;}
+
+
+#footer{
+   
+    font-size: 22px; 
+}
+
+
+
+
+}/*  min-width:1132px*/
+
+
