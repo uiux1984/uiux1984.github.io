@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THE MINIMAL</title>
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/xeicon.css">
+    <link rel="stylesheet" href="css/svg.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery-2.1.1.min.js"></script>
+    <script src="js/simpleParallax.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+</head>
+
+<body>
+    <header id="header">
+        <div class="header_bg"></div>
+
+        <div class="header_top">
+            <h1 class="logo">
+                <a href="#">
+                    THE MINIMAL
+                </a>
+            </h1>
+
+            <nav class="gnb">
+                <a href="#">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </a>
+            </nav>
+
+            <div class="lnb">
+                <span><a href="#">kakao login</a></span>
+                <span><a href="#">Sign up</a></span>
+            </div>
+        </div>
+
+        <div class="main_rolling">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="img/main_rolling_1.png" alt=""></div>
+                    <div class="swiper-slide"><img src="img/main_rolling_5.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="img/main_rolling_2.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="img/main_rolling_4.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="img/main_rolling_3.jpg" alt=""></div>
+                </div>
+                <div class="swiper-pagination"></div>
+
+                <!-- If we need navigation buttons -->
+            </div>
+        </div>
+
+        <!-- Initialize Swiper -->
+        <script>
+            var swiper = new Swiper(".mySwiper", {
+                direction: "vertical",
+                loop: true,
+                effect: "fade",
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                },
+                autoplay: {
+                    delay: 2500,
+                    disableOnInteraction: false
+                },
+            });
+        </script>
+
+        <div class="main_rolling_txt">
+            <h2>Empty things and <br>Fill them with true me.</h2>
+            <p>물건을 비우고 진정한 나로 채웁니다.</p>
+        </div>
+
+    </header>
+
+    <script>
+        //$(window).on('scroll',function(){})
+        $(function () {
+
+            $(window).scroll(function () {
+
+                if ($(this).scrollTop() > $('.logo').height()) {
+                    $('.header_bg').addClass('on');
+                } else {
+                    $('.header_bg').removeClass('on');
+                }
+            })
+        }); //doc
+    </script>
+
+    <div class="gnb_open">
+
+        <div class="btn_close">
+            <i class="xi-close"></i>
+        </div>
+        <p style="text-align: center; margin-top:300px;font-size: 100px;">누가 메뉴 좀 넣어줘 ㅋㅋㅋ</p>
+    </div>
+
+    <script>
+    $(function(){
+        $('.gnb').click(function(){
+            $('.gnb_open').addClass('on');
+        });
+        $('.btn_close').click(function(){
+            $('.gnb_open').removeClass('on');
+        });
+    });
+    </script>
+
+    <section class="sec_1">
+        <p>PROGRAM</p>
+        <h2>국내 유일한 살림 경영 아카데미</h2>
+
+        <div class="main_service_item">
+            <a class="main_service_link" href="#">
+                <figure class="main_service_thumb">
+                    <img src="img/p1.png" alt="">
+                </figure>
+                <div class="main_service_content">
+                    <span class="main_service_tit">[습관형성프로젝트] 살림업클럽 3주 과정</span>
+                    <span class="main_service_txt">55,000원</span>
+                </div>
+            </a>
+        </div>
+
+        <div class="main_service_item">
+            <a class="main_service_link" href="#">
+                <figure class="main_service_thumb">
+                    <img src="img/p2.png" alt="">
+                </figure>
+                <div class="main_service_content">
+                    <span class="main_service_tit">[습관형성프로젝트] 가계부웜업 3주 과정</span>
+                    <span class="main_service_txt">66,000원</span>
+                </div>
+            </a>
+        </div>
+
+        <div class="main_service_item">
+            <a class="main_service_link" href="#">
+                <figure class="main_service_thumb">
+                    <img src="img/p3.png" alt="">
+                </figure>
+                <div class="main_service_content">
+                    <span class="main_service_tit">[비움프로젝트] 살림경영클래스 10주 과정</span>
+                    <span class="main_service_txt">660,000원</span>
+                </div>
+            </a>
+        </div>
+
+        <div class="main_service_item">
+            <a class="main_service_link" href="#">
+                <figure class="main_service_thumb">
+                    <img src="img/p4.png" alt="">
+                </figure>
+                <div class="main_service_content">
+                    <span class="main_service_tit">[채움프로젝트] 푼돈목돈클래스 4주 과정</span>
+                    <span class="main_service_txt">220,000원</span>
+                </div>
+            </a>
+        </div>
+
+        <div class="main_service_item">
+            <a class="main_service_link" href="#">
+                <figure class="main_service_thumb">
+                    <img src="img/p5.png" alt="">
+                </figure>
+                <div class="main_service_content">
+                    <span class="main_service_tit">[키움프로젝트] 레벨업 클럽 3주 과정</span>
+                    <span class="main_service_txt">66,000원</span>
+                </div>
+            </a>
+        </div>
+
+        <div class="main_service_item">
+            <a class="main_service_link" href="#">
+                <figure class="main_service_thumb">
+                    <img src="img/p6.png" alt="">
+                </figure>
+                <div class="main_service_content">
+                    <span class="main_service_tit">[원데이클래스] 돈정리의 마법 1일 과정</span>
+                    <span class="main_service_txt">30,000원</span>
+                </div>
+            </a>
+        </div>
+
+        <div class="v_btn">
+            <a href="#">
+                <img src="img/view_btn.png" onmouseover="this.src='img/view_btn_on.png'"
+                    onmouseout="this.src='img/view_btn.png'" />
+            </a>
+        </div>
+
+    </section>
+
+    <section class="sec_2">
+        <p class="move_txt">START MINIMAL LIFE.</p>
+
+
+<script>
+var move_ofs = $('.sec_2').offset().top - 900;
+
+$(window).scroll(function () {
+
+    if ($(window).scrollTop() > move_ofs) {
+        $('.move_txt').animate({
+                    left:-200
+                },2000
+                )}
+
+});//scroll
+</script>
+
+        <div class="sec_2_txt">
+            <p class="tit">1:1 Consulting</p>
+            <p class="txt">정규 과정과 시간이 맞지 않거나<br>
+                나의 상황을 타인에게 보여주기 꺼려지는 분을 위한 프로그램입니다.</p>
+            <div class="v_btn">
+                <a href="#">
+                    <img src="img/view_btn.png" onmouseover="this.src='img/view_btn_on.png'"
+                        onmouseout="this.src='img/view_btn.png'" />
+                </a>
+            </div>
+        </div>
+        <img src="img/consulting.png" alt="" class="thumbnail_1">
+    </section>
+
+    <script>
+        var image1 = document.getElementsByClassName('thumbnail_1');
+        new simpleParallax(image1, {
+            overflow: true
+        });
+
+    </script>
+
+
+    <section class="sec_3">
+        <p>BRAND STORY</p>
+        <h2>MINI and MORE and GROW</h2>
+
+        <ul class="ma_icons">
+            <li>
+                <div class="icon">
+                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 160 160"
+                        style="enable-background:new 0 0 160 160;" xml:space="preserve" class="on">
+                        <line class="st0" x1="81.86" y1="19.26" x2="81.86" y2="45.46" />
+                        <line class="st0" x1="38.97" y1="36.43" x2="57.5" y2="54.95" />
+                        <line class="st0" x1="20.78" y1="78.89" x2="46.98" y2="78.89" />
+                        <line class="st0" x1="37.95" y1="121.78" x2="56.48" y2="103.25" />
+                        <line class="st0" x1="80.41" y1="139.96" x2="80.41" y2="113.76" />
+                        <line class="st0" x1="123.3" y1="122.8" x2="104.77" y2="104.27" />
+                        <line class="st0" x1="141.49" y1="80.33" x2="115.28" y2="80.33" />
+                        <line class="st0" x1="124.32" y1="37.45" x2="105.79" y2="55.98" />
+                    </svg>
+                </div>
+                <p class="tit">비우고</p>
+                <p class="txt">설레이지 않는 물건을 비우고<br>
+                    불필요한 정리 시간을 비우고</p>
+            </li>
+
+            <li>
+                <div class="icon">
+                    <svg version="1.1" id="Layer_2" x="0px" y="0px" viewBox="0 0 160 160"
+                        style="enable-background:new 0 0 160 160;" xml:space="preserve">
+                        <line class="st0" x1="80.52" y1="22.79" x2="80.52" y2="103.93" />
+                        <path class="st0"
+                            d="M141.02,97.41v29.33c0,6.3-6.12,11.4-13.67,11.4H33.7c-7.55,0-13.67-5.1-13.67-11.4V97.41" />
+                        <path class="st0"
+                            d="M141.02,97.41v29.33c0,6.3-6.12,11.4-13.67,11.4H33.7c-7.55,0-13.67-5.1-13.67-11.4V97.41" />
+                        <polyline class="st1" points="117.01,67.45 80.52,103.93 44.04,67.45 " />
+                    </svg>
+                </div>
+                <p class="tit">채우고</p>
+                <p class="txt">나에게 가치있는 물건으로 채우고<br>
+                    나를 위한 시간을 채우고</p>
+            </li>
+
+            <li>
+                <div class="icon">
+                    <svg version="1.1" id="Layer_3" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 160 160"
+                        style="enable-background:new 0 0 160 160;" xml:space="preserve">
+                        <polyline class="st0" points="91.8,42.6 140.36,42.6 140.36,91.17 " />
+                        <polyline class="st0" points="16.1,105.41 56.29,65.22 87.01,95.95 140.36,42.6 " />
+                    </svg>
+                </div>
+                <p class="tit">성장하는</p>
+                <p class="txt">주체적인 삶을 꿈꾸는<br>
+                    주부가 아닌 살림 경영자로</p>
+            </li>
+
+        </ul>
+
+
+        <script>
+
+            var icon_ofs = $('.ma_icons').offset().top - 500;
+
+            $(window).scroll(function () {
+
+                if ($(window).scrollTop() > icon_ofs) {
+                    $('.icon').addClass('on');
+                }
+
+            });
+
+        </script>
+
+
+        <div class="v_btn">
+            <a href="#">
+                <img src="img/view_btn.png" onmouseover="this.src='img/view_btn_on.png'"
+                    onmouseout="this.src='img/view_btn.png'" />
+            </a>
+        </div>
+    </section>
+
+    <section class="sec_4">
+        <div class="sec_4_txt">
+            물건을 비웠을 뿐인데<br>
+            돈, 시간, 환경, 가족, 습관, 나의 일상까지<br>
+            모든 것이 변하기 시작했습니다.
+            <p class="txt">더 미니멀과 함께 일상이 달라지는 경험을 시작해보세요.</p>
+            <div class="v_btn">
+                <a href="#">
+                    <img src="img/view_btn.png" onmouseover="this.src='img/view_btn_on.png'"
+                        onmouseout="this.src='img/view_btn.png'" />
+                </a>
+            </div>
+        </div>
+        <div class="one">
+            <img src="img/startminimal.png" alt="" class="thumbnail_2">
+        </div>
+    </section>
+
+    <script>
+        var image2 = document.getElementsByClassName('thumbnail_2');
+        new simpleParallax(image2, {
+            orientation: 'down',
+            scale: 1.3,
+            delay: 1.5,
+        });
+    </script>
+
+
+    <section class="sec_5">
+        <div class="sec_5_bg"></div>
+        <div class="sec_5_txt">
+            <p>REGISTER</p>
+            <p class="tit">CONTACT <br>
+                FOR MORE <br>
+                INFORMATION</p>
+            <p class="txt">더 미니멀에 대해 궁금하신가요?<br>
+                입력하신 정보를 바탕으로<br>
+                궁금하신 상담을 도와드립니다.</p>
+            <div class="v_btn">
+                <a href="#">
+                    <img src="img/view_btn.png" onmouseover="this.src='img/view_btn_on.png'"
+                        onmouseout="this.src='img/view_btn.png'" />
+                </a>
+            </div>
+        </div>
+        <img src="img/ceo.png" alt="">
+    </section>
+
+    <section class="insta">
+        <h2>INSTAGRAM</h2>
+        <div class="insta_photo">
+            <ul class="insta_list">
+                <li><a href="#">
+                        <div class="info">
+                            <h4>가볍게 더 미니멀을 경험해보고 싶은 분들!</h4>
+                        </div>
+                        <img src="img/sns1.png" alt="">
+                    </a></li>
+                <li><a href="#">
+                        <div class="info">
+                            <h4>당신이 돈을 관리하지 않으면</h4>
+                        </div>
+                        <img src="img/sns2.png" alt="">
+                    </a></li>
+                <li><a href="#">
+                        <div class="info">
+                            <h4>하고싶은 것vs할 수 있는 것</h4>
+                        </div>
+                        <img src="img/sns3.png" alt="">
+                    </a></li>
+                <li><a href="#">
+                        <div class="info">
+                            <h4>우리집 보험 정리 워크숍!!</h4>
+                        </div><img src="img/sns4.png" alt="">
+                    </a></li>
+            </ul>
+            <ul class="insta_list">
+                <li><a href="#">
+                        <div class="info">
+                            <h4>한 달 보험료 15만 원 줄이기 성공!</h4>
+                        </div>
+                        <img src="img/sns5.png" alt="">
+                    </a></li>
+                <li><a href="#">
+                        <div class="info">
+                            <h4>미니멀보험 오프라인 워크숍 드디어 내일!!!</h4>
+                        </div>
+                        <img src="img/sns6.png" alt="">
+                    </a></li>
+                <li><a href="#">
+                        <div class="info">
+                            <h4>하나를비우니모든게달라졌다</h4>
+                        </div>
+                        <img src="img/sns7.png" alt="">
+                    </a></li>
+                <li><a href="#">
+                        <div class="info">
+                            <h4>내가 하는 일이 단순한 집안일이 아니라</h4>
+                        </div><img src="img/sns8.png" alt="">
+                    </a></li>
+            </ul>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <h1 class="logo"><a href="#">THE MINIMAL</a></h1>
+        <p>더 미니멀 │ 대표 이초아 │ 경기도 부천시 소향로 13번길 14-22 금호프라자 802호<br>
+            사업자등록번호 438-51-00468 │ 통신판매업 │ 2021-경기부천-0689호 │ Tel.0507-1416-8205 │ kikiou1@naver.com</p>
+        <br>
+        <br>
+        <p class="line">
+        </p>
+        <br>
+        <p><a href="#">이용약관</a><a href="#">개인정보처리방침</a></p>
+        <p>Copyright ⓒ 2023 더 미니멀 All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
