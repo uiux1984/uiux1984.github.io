@@ -1,0 +1,364 @@
+/* 배경동영상 */
+.vid2{
+    position:absolute;
+    top:45%; left: 55%;
+    transform: translate(-50%,-50%);
+    opacity: 1;
+}
+
+.vid2 p{
+    font: 70px 'StrongSword_Pure';
+    color: #fff;
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+.vid_test{
+    overflow: hidden;
+    position: absolute;
+    top:50%; left: 55%;
+    transform: translate(-50%,-50%);
+    width: 100%;
+    height: 100vh;
+    background: url(../img/neon-circle.png)no-repeat center;
+    color: #fff;
+}
+.test{
+    overflow: hidden;
+    position: absolute;
+    top:50%; left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 50px;
+    font-family: 'StrongSword_Pure';
+    text-align: center;
+}
+.test2{
+    margin-top: 20px;
+    font-size: 18px;
+}
+.test_btn{
+    margin-top: 50px;
+    font-size: 20px;
+    padding: 5px 20px;
+    border-radius: 25px;
+    background-color: #9667ff;
+    border: 0;
+    
+}
+
+.vid{
+    background: linear-gradient(180deg, #050A25 0%, #0e0520 100%);
+    position: fixed;
+    top: 0; left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #9667ff;
+    opacity: 1;
+}
+.vid video{
+    width: 100%;
+    min-width: 1600px;
+}
+.vid img{
+    width: 100%;
+    min-width: 1600px;
+}
+
+/* 로고 */
+.logo{position: fixed; top: 40px; left: 40px; z-index: 10;}
+.logo>a{}
+.logo>a>img{
+    width: 200px;
+}
+
+/* 헤더 */
+header{
+    width: 700px; height: 100vh;
+    background: linear-gradient(45deg, rgba(2,0,36,0.5) 0%, rgba(0,0,0,0.8)100%);
+    position: fixed; top: 0; left: -450px;
+    z-index: 3;
+    transform: skewX(-40deg);
+}
+#gnb{
+    position: absolute;
+    top: 190px; right: 0;
+    width: 220px;
+}
+/* 1depth */
+#gnb>li{position: relative;}
+#gnb>li>a{
+    display: block;
+    width: 100%;
+    padding: 15px 0 15px 30px;
+    box-sizing: border-box;
+    font: bold 17px/40px 'arial';
+    color: #fff;
+    text-align: center;
+}
+#gnb em{
+    display: block;
+    transform: skewX(40deg);
+}
+/* 2depth */
+#gnb>li>ul{
+   position: absolute; top: 0; left: 0;
+   transition: all 0.5s;
+   opacity: 0;
+}
+#gnb>li>ul>li>a{
+    display: block;
+    width: 150px;
+    height: 40px;
+    font: bold 16px/40px 'arial';
+    text-align: center;
+    background-color: linear-gradient(45deg, rgba(2,0,36,0.3) 0%, rgba(0,0,0,0.5)100%);
+    color: #fff;
+    border-bottom: 4px solid #9667ff;
+    transition: all 0.5s;
+    background-color: rgba(0, 0, 0, 0.3)
+}
+
+/* gnb 호버효과 */
+#gnb>li.on>a{
+    color:#9667ff;
+}
+#gnb>li:hover>a{
+    color:#9667ff;
+}
+
+#gnb>li.on>ul{
+    left: 220px;
+    opacity: 0.9;
+}
+#gnb>li:hover>ul{
+    left: 220px;
+    opacity: 0.9;
+}
+#gnb>li>ul>li>a:hover{
+    color:#9667ff;
+}
+
+
+/* sns */
+#sns{
+    position: fixed;
+    top: 60px; right: 50px;
+    z-index: 8;
+    display: flex;
+}
+#sns>li{margin-right: 20px;}
+#sns>li>a{}
+#sns>li>a>i{
+    font-size: 28px; color: #fff; opacity: 0.7;
+    transition: all 0.5s;
+    transform: scale(1);
+}
+
+/* 호버효과 */
+#sns>li>a>i:hover{
+    transform: scale(1.2);
+    opacity: 1;
+}
+
+/* 캐릭터 선택 버튼 */
+.intro{
+    position: fixed;
+    bottom: 250px;
+    left: 260px;
+    z-index: 6;
+    font: 18px 'StrongSword_Mixed';
+    color: #9667ff;
+    line-height: 22px;
+}
+.intro em{
+    font-size: 22px;
+}
+
+.btn_list{
+    position: fixed;
+    bottom: 100px;
+    left: 240px;
+    display: flex;
+    z-index: 6;
+}
+.btn_list li{
+    margin-right: 10px;
+}
+.btn_list a{
+    display: block;
+    width: 50px;
+    height: 50px;
+    font: 16px 'StrongSword_Pure';
+    color: #9667ff;
+    text-align: center;
+}
+
+.btn_list a img{
+    display: block;
+    width: 50px;
+    height: 50px;
+}
+
+.btn_list>li>a:hover img{
+    display: block;
+    width: 50px;
+    height: 50px;
+}
+
+.btn_list>li>a:hover{
+    color: #fff;
+}
+
+.tab-circle {
+    background-image: url(../img/tab-circle.png);
+    opacity: 0.85;
+    width: 100%;
+    min-height: 180px;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 80%;
+    transition: all .5s ease;
+}
+
+.tab-circle:hover {
+    background-image: url(../img/tab-circle.png);
+    opacity: 1;
+    transition: all .5s ease;
+}
+
+/* 앨범 텍스트 */
+.title_album{}
+.title_album li{position: fixed;
+     top: 300px; left: 600px; 
+     opacity: 1; 
+     z-index: 5;
+    }
+
+    .title_album li>p{
+    font: 60px 'StrongSword_Pure';
+    color: #fff;
+}
+.title_album li span{
+    font: 16px 'StrongSword_Mixed';
+    color: #fff;
+    line-height: 35px;
+}
+
+.title_album>li>span.Profile{
+    font-size: 18px;
+    color: #c7adff;
+}
+
+.title_album li hr{
+    color: rgb(159, 159, 186) ;
+    opacity: 0.5;
+}
+
+
+/* 캐릭터 텍스트 */
+.title{}
+.title li{position: fixed; top: 190px; left: 550px; opacity: 0; transition: all 0.5s; z-index: 5;}
+.title li>p{
+    font: 70px 'StrongSword_Pure';
+    color: #fff;
+}
+.title li span{
+    font: 16px 'StrongSword_Mixed';
+    color: #fff;
+    line-height: 35px;
+}
+
+.title>li>span.Profile{
+    font-size: 24px;
+    color: #c7adff;
+}
+
+.title li hr{
+    color: rgb(159, 159, 186) ;
+    opacity: 0.5;
+}
+
+/* 활성화 */
+.title li.on{ opacity: 1; left: 1200px;}
+
+
+/* 캐릭터이미지 */
+.pic{}
+.pic>p{
+    position: fixed; 
+    top: 0; right: 0px;
+    z-index: 7;
+    opacity: 0;
+    transition: all 0.5s;
+}
+.pic>p>img{
+
+}
+
+.pic p{transform: translateY(0px) scale(0.3) ;}
+.pic p.on{transform: translateY(100px) scale(1);}
+
+
+/* 활성화 */
+.pic>p.on{opacity: 1; right: 800px;}
+
+
+
+
+
+.pic_album{
+    position: fixed; 
+    top: 180px; right: 180px;
+    z-index: 7;
+}
+.pic_album>p>img{
+    width: 500px;
+}
+
+
+.pic_test{
+    position: fixed; 
+    top: 10px; left: 35%;
+    z-index: 7;
+}
+.pic_test>p>img{
+    width: 700px;
+}
+
+/* 앨범 텍스트 */
+.title_test{}
+.title_test li{
+    position: fixed;
+     top: 230px; left: 45%; 
+     opacity: 1; 
+     z-index: 5;
+    }
+    .title_test li>p{
+    font: 60px 'StrongSword_Pure';
+    color: #fff;
+    text-align: center;
+}
+.title_test li span{
+    font: 16px 'StrongSword_Mixed';
+    color: #fff;
+    line-height: 35px;
+    text-align: center;
+    margin-top: 200px;
+}
+
+.test_btn{
+    text-align: center;
+    font-size: 20px;
+    padding: 5px 40px;
+    border-radius: 25px;
+    background-color: #9667ff;
+    border: 0;
+    font-weight: bold;
+    position: absolute;
+    top: 400px; left: 27%; 
+
+}
